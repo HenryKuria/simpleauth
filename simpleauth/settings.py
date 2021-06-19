@@ -33,7 +33,7 @@ def get_env_variable(name):
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-!745j780yf5vr=du^7q55#a%pmy%b992_vz8)8(n#v5b@y)b4r'
+SECRET_KEY = get_env_variable('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
